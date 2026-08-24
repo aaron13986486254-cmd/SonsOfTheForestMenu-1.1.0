@@ -1,5 +1,9 @@
 # SonsOfTheForestMenu-1.1.0
 
+<p align="center">
+  <img src="https://i.imgur.com/mqddTXL.png" alt="Sons of the Forest Menu" width="100%" />
+</p>
+
 This is my custom Sons of the Forest mod menu.
 
 I built it using C# and BepInEx 6 with IL2CPP. The mod includes a variety of features for players, including player controls, combat options such as melee, spawning controls for locations and amounts, world settings such as weather, and various multiplayer tools.
