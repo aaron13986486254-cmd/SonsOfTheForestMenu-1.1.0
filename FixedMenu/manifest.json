@@ -1,0 +1,10 @@
+{
+  "id": "com.stormfest.sonsoftheforestmenu",
+  "name": "Sons of the Forest Menu",
+  "author": "cyberfox1337x",
+  "version": "1.2.1",
+  "description": "RedLoader compatibility port of the original 1.2.1 Sons of the Forest Menu implementation.",
+  "gameVersion": "0.11.3",
+  "platform": "Client",
+  "type": "Mod"
+}
