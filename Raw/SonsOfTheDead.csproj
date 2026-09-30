@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>SonsOfTheDead</AssemblyName>
+    <RootNamespace>Cyberfox1337x.SonsOfTheForest</RootNamespace>
+    <Version>1.2.1</Version>
+    <Authors>cyberfox1337x</Authors>
+    <Product>Sons of the Forest Menu - RedLoader port</Product>
+    <Description>RedLoader port of Sons of the Forest Menu.</Description>
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="RedLoader"><HintPath>$(GameDir)\_Redloader\net6\RedLoader.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SonsSdk"><HintPath>$(GameDir)\_Redloader\net6\SonsSdk.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TheForest.Commons"><HintPath>$(GameDir)\_Redloader\Game\TheForest.Commons.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppInterop.Common"><HintPath>$(GameDir)\_Redloader\net6\Il2CppInterop.Common.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppInterop.Runtime"><HintPath>$(GameDir)\_Redloader\net6\Il2CppInterop.Runtime.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2Cppmscorlib"><HintPath>$(GameDir)\_Redloader\Game\Il2Cppmscorlib.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameDir)\_Redloader\net6\0Harmony.dll</HintPath><Private>false</Private></Reference>
+
+    <Reference Include="UnityEngine"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.ImageConversionModule"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.ImageConversionModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(GameDir)\_Redloader\Game\UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime"><HintPath>$(GameDir)\_Redloader\Game\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime"><HintPath>$(GameDir)\_Redloader\Game\Unity.RenderPipelines.Core.Runtime.dll</HintPath><Private>false</Private></Reference>
+
+    <Reference Include="Sons"><HintPath>$(GameDir)\_Redloader\Game\Sons.dll</HintPath><Aliases>global,SonsGame</Aliases><Private>false</Private></Reference>
+    <Reference Include="Sons.Areas"><HintPath>$(GameDir)\_Redloader\Game\Sons.Areas.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Item"><HintPath>$(GameDir)\_Redloader\Game\Sons.Item.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Input"><HintPath>$(GameDir)\_Redloader\Game\Sons.Input.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.StatSystem"><HintPath>$(GameDir)\_Redloader\Game\Sons.StatSystem.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Construction"><HintPath>$(GameDir)\_Redloader\Game\Sons.Construction.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Construction.Utils"><HintPath>$(GameDir)\_Redloader\Game\Sons.Construction.Utils.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Ai.Vail"><HintPath>$(GameDir)\_Redloader\Game\Sons.Ai.Vail.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Multiplayer"><HintPath>$(GameDir)\_Redloader\Game\Sons.Multiplayer.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Cinematics"><HintPath>$(GameDir)\_Redloader\Game\Sons.Cinematics.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Weapon"><HintPath>$(GameDir)\_Redloader\Game\Sons.Weapon.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Settings"><HintPath>$(GameDir)\_Redloader\Game\Sons.Settings.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Atmosphere"><HintPath>$(GameDir)\_Redloader\Game\Sons.Atmosphere.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sons.Gui"><HintPath>$(GameDir)\_Redloader\Game\Sons.Gui.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Endnight"><HintPath>$(GameDir)\_Redloader\Game\Endnight.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BulletBallistics"><HintPath>$(GameDir)\_Redloader\Game\BulletBallistics.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="com.rlabrecque.steamworks.net"><HintPath>$(GameDir)\_Redloader\Game\com.rlabrecque.steamworks.net.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="bolt"><HintPath>$(GameDir)\_Redloader\Game\bolt.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Bolt.Unity"><HintPath>$(GameDir)\_Redloader\Game\Bolt.Unity.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="bolt.user"><HintPath>$(GameDir)\_Redloader\Game\bolt.user.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="manifest.json" />
+    <None Update="manifest.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></None>
+  </ItemGroup>
+</Project>
